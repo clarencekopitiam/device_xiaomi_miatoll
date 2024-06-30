@@ -175,6 +175,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
+    SM6250DeviceAsWebcam \
     SM6250Frameworks \
     SM6250Settings \
     SM6250SystemUI \
