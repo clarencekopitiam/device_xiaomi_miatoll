@@ -42,6 +42,18 @@ function configure_memory_parameters() {
 	echo 1 > /proc/sys/vm/watermark_scale_factor
 }
 
+# Set swappiness based the device's RAM size
+    RamStr=$(cat /proc/meminfo | grep MemTotal)
+    RamMB=$((${RamStr:16:8} / 1024))
+
+    if [ $RamMB -le 4096 ]; then
+        echo 150 > /proc/sys/vm/swappiness
+    elif [ $RamMB -le 6144 ]; then
+        echo 100 > /proc/sys/vm/swappiness
+    else
+        echo 60 > /proc/sys/vm/swappiness
+    fi
+
 # Setting b.L scheduler parameters
 echo 25 > /proc/sys/kernel/sched_downmigrate_boosted
 echo 25 > /proc/sys/kernel/sched_upmigrate_boosted
