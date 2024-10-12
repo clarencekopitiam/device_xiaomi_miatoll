@@ -81,10 +81,15 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "/^service/! s/wfdservice$/wfdservice64/g" "${2}"
             ;;
+        system_ext/lib64/libwfdmmsrc_system.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+            ;;
         # Remove dependency on android.hidl.base@1.0 for WFD native library.
         system_ext/lib64/libwfdnative.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            grep -q "libinput_shim.so" "${2}" || "${PATCHELF}" --add-needed "libinput_shim.so" "${2}"
             ;;
         system_ext/lib64/libwfdservice.so)
             [ "$2" = "" ] && return 0
