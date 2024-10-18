@@ -417,11 +417,11 @@ system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar|c8e157f2f
 system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar|f4e09b305c8ac9a1497cbdfd856ae3fc8eabb790
 system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar|1135a9886b40f81c37d5fe3e9d1d472446a8ecac
 system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|af63b51876055618faa33eaafd501908937d9b5e
--system_ext/lib64/com.quicinc.cne.api@1.0.so|6bce2af7deb1c3d2598854404a166a99d4d6becb
--system_ext/lib64/com.quicinc.cne.api@1.1.so|612ab9e7062080d649a7eec1578cb4579c5f991f
--system_ext/lib64/com.quicinc.cne.constants@1.0.so|f76f263827ff7674a1a6d0460614de21a9b869fd
--system_ext/lib64/com.quicinc.cne.constants@2.0.so|0645c2e1ecea7028f037666adb6bb9d3fa30ec73
--system_ext/lib64/com.quicinc.cne.constants@2.1.so|c3c529a042edffec2299e3e9cc35d3be3c1921c1
+system_ext/lib64/com.quicinc.cne.api@1.0.so|6bce2af7deb1c3d2598854404a166a99d4d6becb
+system_ext/lib64/com.quicinc.cne.api@1.1.so|612ab9e7062080d649a7eec1578cb4579c5f991f
+system_ext/lib64/com.quicinc.cne.constants@1.0.so|f76f263827ff7674a1a6d0460614de21a9b869fd
+system_ext/lib64/com.quicinc.cne.constants@2.0.so|0645c2e1ecea7028f037666adb6bb9d3fa30ec73
+system_ext/lib64/com.quicinc.cne.constants@2.1.so|c3c529a042edffec2299e3e9cc35d3be3c1921c1
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so|ef61daaa9ae8e68219800b1da15dcc22f9bf59d9
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so|0df6774af7a9b82aed6987b8fab0c68ef2afbb50
 system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so|7dea30c48f8dd11ca0f6b9706aa57a675fb41dd6
