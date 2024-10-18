@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
 
 PRODUCT_PACKAGES += \
-    libaudioroute.vendor \
     libbatterylistener \
     libcomprcapture \
     libexthwplugin \
@@ -62,27 +61,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1.vendor \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
-# Camera
-PRODUCT_PACKAGES += \
-    libMegviiFacepp-0.5.2 \
-    libmegface \
-    libpiex_shim \
-    libpng.vendor
-
-# Cgroup
-PRODUCT_PACKAGES += \
-    libprocessgroup.vendor
-
-PRODUCT_PACKAGES += \
-    libpng.vendor
-
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
@@ -101,19 +79,12 @@ PRODUCT_PACKAGES += \
     disable_configstore \
     gralloc.atoll \
     hwcomposer.atoll \
-    libdisplayconfig.system.qti \
-    libqdMetaData.system \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    vendor.qti.hardware.display.allocator-service
 
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     libcrypto-v33
-
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -121,22 +92,13 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3.vendor \
     android.hardware.biometrics.fingerprint-service.xiaomi
-
-PRODUCT_PACKAGES += \
-    com.fingerprints.extension@1.0.vendor \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio
-
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -145,7 +107,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libbatching \
-    libcurl.vendor \
     libgeofencing \
     libgnss
 
@@ -158,19 +119,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
-    android.hardware.health-service.qti_recovery \
-    android.hardware.health@2.1.vendor
-
-# HIDL
-PRODUCT_PACKAGES += \
-    libhwbinder.vendor \
-    libutils.vendor
-
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0.vendor \
-    android.hidl.manager@1.0.vendor \
-    android.hidl.memory@1.0.vendor \
-    android.hidl.memory.block@1.0.vendor
+    android.hardware.health-service.qti_recovery
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
@@ -195,10 +144,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
-
 # Libshims
 PRODUCT_PACKAGES += \
     fakelogprint
@@ -213,10 +158,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 TARGET_DISABLE_C2_CODEC := false
-
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -233,15 +174,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
-
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    libnetutils.vendor
-
-# Neural networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -270,8 +202,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw \
-    libstagefright_softomx_plugin.vendor
+    libstagefrighthw
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -345,34 +276,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
-
-# QMI
-PRODUCT_PACKAGES += \
-    libion.vendor \
-    libjson \
-    libjsoncpp.vendor \
-    libqti_vndfwk_detect.vendor \
-    libsqlite.vendor \
-    libvndfwk_detect_jni.qti.vendor
-
-# RIL
-PRODUCT_PACKAGES += \
-    librmnetctl \
-    libxml2
-
-PRODUCT_PACKAGES += \
-    libsqlite.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor
-
 # Rootdir
 PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
@@ -398,9 +301,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge
+    android.frameworks.sensorservice@1.0
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -480,13 +381,10 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    android.hardware.wifi.hostapd@1.0.vendor \
     hostapd \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.2.vendor \
     wpa_supplicant \
     wpa_supplicant.conf
 
@@ -497,11 +395,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
     libwfdaac_vendor
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.config-V5-ndk
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
