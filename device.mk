@@ -83,8 +83,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    libcrypto-v33
+    android.hardware.drm-service.clearkey
 
 # Fastbootd
 PRODUCT_PACKAGES += \
