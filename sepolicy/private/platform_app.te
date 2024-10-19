@@ -1,3 +1,0 @@
-hal_client_domain(platform_app, hal_misys)
-
-allow platform_app config_gz:file r_file_perms;
