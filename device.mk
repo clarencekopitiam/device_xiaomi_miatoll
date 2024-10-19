@@ -37,16 +37,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
 
 PRODUCT_PACKAGES += \
-    libbatterylistener \
-    libcomprcapture \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
-    libspkrprot \
     libvolumelistener \
     sound_trigger.primary.atoll:32 \
     tinymix
