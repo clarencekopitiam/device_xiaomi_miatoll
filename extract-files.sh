@@ -81,6 +81,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
+        vendor/lib64/android.hardware.camera.provider@2.4-legacy.so | vendor/bin/hw/android.hardware.camera.provider@2.4-service_64 | vendor/lib64/camera.device@1.0-impl.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "vendor.qti.hardware.camera.device@1.0.so" "vendor.qti.hardware.camera.device@1.0_vendor.so" "${2}"
+            ;;
         system_ext/etc/init/wfdservice.rc)
             [ "$2" = "" ] && return 0
             sed -i "/^service/! s/wfdservice$/wfdservice64/g" "${2}"
