@@ -38,16 +38,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudioroute.vendor \
-    libbatterylistener \
-    libcomprcapture \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
-    libspkrprot \
     libvolumelistener \
     sound_trigger.primary.atoll:32 \
     tinymix
