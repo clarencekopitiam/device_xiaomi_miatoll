@@ -832,26 +832,6 @@ vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 
-# Media - from sweet
-vendor/lib/libOmxAacDec.so|cfc3ef1c41f0883a2f51af0aeeb891b6774131ea
-vendor/lib/libOmxAlacDec.so|48a9f2659bc89a888ed6e7ec7545bbb22401624f
-vendor/lib/libOmxAmrwbplusDec.so|4cd89298dd20b453427eec104a381034d1642e91
-vendor/lib/libOmxApeDec.so|80b1b989b16a7e92d23e7eb9b3c15ac32d1c3d49
-vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
-vendor/lib/libOmxEvrcDec.so|ad5886dfe926939436176fc536f3063a02030f38
-vendor/lib/libOmxQcelp13Dec.so|fd941876c153a669eb41395b869de57001a431d8
-vendor/lib/libOmxWmaDec.so|d171618176f101bc551d08d1e1be9f7f76a859bc
-vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
-vendor/lib64/libOmxAlacDec.so|9775cd4f81fa885f7d85450902cde24ef7dd586c
-vendor/lib64/libOmxAmrwbplusDec.so|f71d949ec3b5bd7ceea3662fefb51cc3239f8d7b
-vendor/lib64/libOmxApeDec.so|30934041a64978be566ba87efe907125bd26331b
-vendor/lib64/libOmxEvrcDec.so|d4703cef37161fbf85cc9f9911cc0c22472c5268
-vendor/lib64/libOmxQcelp13Dec.so|4d00801312df3bd81aee020f8e91ca15d3ff5d38
-vendor/lib64/libOmxWmaDec.so|9948a5504e9564c0e5a55928b3f5ef61727b6286
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so|e336f4a3d0a50ee985639db6a8a70ec9817144ee
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so|7ae61a9c75d4a17f0aad5969ce1a27cd5b0552ae
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so|85a4e2ca843525db5c76486dbee4c5c7a672ee8d
-
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/bin/npu_launcher
@@ -1175,6 +1155,11 @@ vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp_1.bin
 vendor/firmware/drv2624.bin
 vendor/firmware/drv2624.rtp
+
+# VPP - from sweet
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|e336f4a3d0a50ee985639db6a8a70ec9817144ee
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so|7ae61a9c75d4a17f0aad5969ce1a27cd5b0552ae
+vendor/lib64/vendor.qti.hardware.vpp@1.3.so|85a4e2ca843525db5c76486dbee4c5c7a672ee8d
 
 # WiFi
 vendor/bin/cnss-daemon
