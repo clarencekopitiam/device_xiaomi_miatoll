@@ -75,8 +75,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     disable_configstore \
-    gralloc.atoll \
-    hwcomposer.atoll \
+    hwcomposer.qcom \
     vendor.qti.hardware.display.allocator-service
 
 # DRM
