@@ -3914,10 +3914,6 @@
         <path name="incall_music_uplink" />
     </path>
 
-    <path name="incall_music_uplink afe-proxy">
-        <path name="incall_music_uplink" />
-    </path>
-
     <path name="incall_music_uplink usb-headphones">
         <path name="incall_music_uplink" />
     </path>
