@@ -71,25 +71,13 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so|8956937951c6f99727ace3380f46275e62
 
 # Audio
 vendor/lib/btaudio_offload_if.so
-vendor/lib/hw/audio.primary.atoll.so
-vendor/lib/liba2dpoffload.so
 vendor/lib/libadm.so
 vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
-vendor/lib/libbatterylistener.so
-vendor/lib/libcomprcapture.so
 vendor/lib/libdrc.so
-vendor/lib/libexthwplugin.so
-vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
 vendor/lib/libqtigef.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/libtinycompress.so
 
 # Audio FX modules - from sweet
 system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
